@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="snap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.main{
+    height: 70vh;
+}
+
+
+header{
+    background-color: #fff;
+    
+    /* box-shadow: 6px 6px 20px #ebdfdf69; */
+
+}
+body::after{
+    content: '';
+    position: abslolute;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+    /* box-shadow: 2px 2px 20px #eee; */
+}
+.ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+    
+}
+.logo{
+    text-shadow: 1px 1px 2px rgba(21, 173, 72, 0.753);
+    font-size: 30px;
+    position: relative;
+}
+.logo::before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(#c4121294,#b12727b7,#ff0000);
+    position: absolute;
+    left: -30px;
+    top: 10px;
+    border-radius: 2px;
+    transform: rotate(-50deg);
+    display: inline-block;
+}
+.ul li a{
+    color: rgba(0, 0, 0, 0.685);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 17px;
+}
+.ul li a::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: gold;
+    position: absolute;
+    bottom: -10px;
+    transition: .5s;
+    font-weight: 700;
+}
+.ul li a:hover:not(.home )::before{
+    width: 100%;
+}
+.ul li a:hover:not(.home){
+        color: rgba(14, 235, 88, 0.89);
+
+}
+.home{
+    color: rgba(255, 14, 6, 0.781);
+    border-bottom: 2px gold solid;
+    padding: 8px 0;
+}
+.btn{
+    background: linear-gradient(to left ,#0f5be7b7, rgb(30, 30, 202));
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-transform: capitalize;
+    color: white;
+    transition: .4s;
+    display: inline-block;
+    opacity: .8;
+}
+.btn:hover{
+    transform: translatey(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.212);
+    opacity: 1;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.img img{
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    transition: .4s;
+    filter: brightness(.6);
+}
+.img img:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.466);
+    transform: translateY(-5px);
+    filter: brightness(1);
+}
+.top{
+    display: flex;
+    gap: 150px;
+    align-items: center;
+}
+.new{
+    padding: 6px 16px;
+    border-radius: 140px;
+        color: rgb(255, 255, 255);
+    background-color: #ff0202d8;
+}
+.new:hover{
+    opacity: .8;
+}
+.top p{
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 18px;
+    background-color: #a9aa9a36;
+    color: #000000;
+   transition: .4s;
+}
+.top p:hover{
+    background-color: #ffffff88;
+    color: #ffffff;
+    background-color: #ff00c8c2;
+}
+.cap{
+    margin-top: 40px;
+    font-size: 70px;
+    text-transform: capitalize;
+}
+.cap span{
+    color: rgba(0, 0, 255, 0.808);
+}
+.lorem{
+    margin: 40px 0;
+    color: #233;
+    letter-spacing: 1px;
+    line-height: 25px;
+    text-align-last: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    cursor: pointer;
+}
+.btns .btn2{
+   border: 1px solid rgba(0, 0, 0, 0.486);padding: 16px 28px;
+   border-radius: 40px;
+   color: blue;
+   font-size: 20px;
+   text-transform: capitalize;
+   transition: .5s;
+   padding: 10px 19px ;
+}
+.btn2:hover{
+    background: linear-gradient(to left ,#0f5be7b7, rgb(30, 30, 202));
+    color: white;
+    border-color: transparent;
+    /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.514); */
+}
+.btns .btn3{
+    background-color: red;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 10px 20px;
+    transition: .4s;
+}
+.btns .btn3:hover{
+    opacity: .7;
+    transform: translatey(-2px);
+}
+h1::selection{
+    color: white;
+    background-color: red;
+}
+
+main{
+    background-color: #fff;
+    padding-top: 50px;
+    /* height: 60vh; */
+}
+.boxs{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-evenly;
+    height: 300px;
+}
+.box{
+    /* box-shadow: rgba(0,0,0,.10); */
+    background-color: rgba(209, 199, 199, 0.24);
+    padding: 20px;
+    border-radius: 5px;
+    transition: .4s;
+    display: grid;
+    gap: 30px;
+}
+.box:hover{
+   transform: translateY(-5px);
+   box-shadow: 2px 2px 10px rgba(65, 30, 30, 0.301);
+}
+.without, .ss{
+    text-align: center;
+}
+i{
+     font-size: 60px;
+}
+.box .fa-photo-film, .box .qq{
+    color: rgb(0, 60, 255);
+        transition: .4s;
+}
+.fa-pen, .box .ww{
+    color: rgb(255, 149, 232);
+}
+.fa-share-nodes, .box .ee{
+    color: rgb(0, 255, 0);
+}
+.box p{
+    color: rgba(0, 0, 0, 0.616);
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+
+.box h2{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.without{
+    color: rgb(25, 52, 207);
+}
+
+.sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:  30px 0;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #42292915;
+    width: 93%;
+    margin: 60px auto;
+}
+.tex{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.fa-heart{
+    color: white;
+    background: linear-gradient(to left ,#0f5be7b7, rgb(30, 30, 202));
+    border-radius: 20px 0;
+    padding: 10px;
+}
+.te h2{
+    line-height: 25px;
+    color: blue;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+.te p{
+    color: #00000098;
+    letter-spacing: 1px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-transform: capitalize;
+}
+.aa i{
+  font-size: 30px;
+  margin-right: 25px;
+  background-color: rgba(189, 189, 166, 0.432);
+  padding: 5px;
+  border-radius: 40px;
+}
+.fa-facebook:hover{
+    /* background: linear-gradient(to right, #f0f0f0, #e0e0e0); */
+    border-color: red;
+}
+footer h1, .aa p{
+    margin-bottom: 30px;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li{
+    margin-top: 20px;
+    text-align: center;
+}
+footer ul li a{
+    color: #020202a1;
+}
+footer ul li a:hover{
+    color: gold;
+}
+footer h2{
+    color: rgba(10, 31, 218, 0.911);
+    text-align: center;
+}
+.dd p{
+   margin: 30px 0;
+   opacity: .7;
+}
+.inp i{
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    /* background-color: #120eff; */
+    padding: 10px 30px;
+    text-align: center;
+    /* display: block; */
+}
+.inp{
+    padding: 20px;
+}
+input{
+    height: 50px;
+    width: 300px;
+    background-color: #292b2b23;
+    color: rgb(20, 42, 243);
+    outline: none;
+    border-color: white;
+}
+</style>
+<body>
+    <header>
+        <nav>
+          <h2 class="logo">snaply</h2>
+          <ul class="ul">
+              <li><a href="#" class="home">home</a></li>
+              <li><a href="#">feature</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">pricing</a></li>
+              <li><a href="#">contact</a></li>
+          </ul>
+          <h2><a href="#" class="btn">get started</a></h2>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="texts">
+                    <div class="top">
+            <a href="#" class="new">New</a>
+            <p>try snaply for free!</p>
+        </div>
+        <h1 class="cap">capture life <br><span>beautifully</span></h1>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Tempore in facere delectus at.</p>
+        <div class="btns">
+            <div class="btn2">get started free</div>
+            <div class="btn3">learn more</div>
+        </div>
+        </div>
+                   
+          <div class="img">
+            <img src="https://media.istockphoto.com/id/618066222/photo/camera-capturing-a-forest.jpg?s=2048x2048&w=is&k=20&c=I1DoDZywT2BCk2pZJ_ssFZ-8EsXX8FTH_adEwAonKbM=">
+         </div>
+    </div>
+    <main>
+        <h3 class="without">feature</h3>
+        <h1 class="ss">everything you need</h1>
+        <div class="boxs">
+            <div class="box">
+                <i class="fa-solid fa-photo-film"></i>
+                <h2>organize easily</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Eveniet facilis ratione aliquam.</p>
+                <h3  class="qq">learn more</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-pen"></i>
+                <h2>organize easily</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Eveniet facilis ratione aliquam.</p>
+                <h3  class="ww">learn more</h3>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-share-nodes"></i>
+                <h2>organize easily</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing <br>elit. Eveniet facilis ratione aliquam.</p>
+                <h3  class="ee">learn more</h3>
+            </div>
+        </div>
+    </main>
+    <div class="sec">
+        <div class="tex">
+        <i class="fa-regular fa-heart"></i>
+        <div class="te">
+            <h2>about snaply</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Debitis saepe eius animi ut!</p>
+        </div>
+        </div>
+        <h2><a href="#" class="btn">get started</a></h2>
+    </div>
+
+    <footer>
+        <div class="aa">
+            <h1>snaply</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Nemo!</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+        </div>
+        <div class="dd">
+            <h2>company</h2>
+            <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">pricing</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+        <div class="dd">
+            <h2>support</h2>
+            <ul>
+                <li><a href="#">help center us</a></li>
+                <li><a href="#">private policy</a></li>
+                <li><a href="#">terms of services</a></li>
+            </ul>
+        </div>
+        <div class="dd">
+            <h2>newsletter</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur <br>adipisicing elit.</p>
+            <div class="inp">
+                <input type="email" placeholder="enter your email" required>
+                <i class="fa-solid fa-paper-plane"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
